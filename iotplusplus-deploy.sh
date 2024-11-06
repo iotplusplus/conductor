@@ -1,0 +1,2 @@
+az webapp create --resource-group hseplusplus-h234y --plan hse-stg-app-service-plan --name iotplusplus-conductor --deployment-container-image-name iotplusplusacr01.azurecr.io/conductor:1.1
+az webapp create --resource-group hseplusplus-h234y --plan hse-stg-app-service-plan --name iotplusplus-conductor --multicontainer-config-type compose --multicontainer-config-file /home/mano/code/hse/conductor/iotplusplus-docker/docker-compose-azurepostgres.yaml
